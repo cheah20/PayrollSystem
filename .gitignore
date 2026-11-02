@@ -1,0 +1,6 @@
+# old copies and design drafts
+_backup/
+*.zip
+
+.DS_Store
+Thumbs.db
