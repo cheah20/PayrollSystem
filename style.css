@@ -1863,6 +1863,20 @@ input[type="checkbox"] {
   color: var(--ink);
 }
 
+/* employee login sees only their own pages */
+.emp-only {
+  display: none !important;
+}
+.employee-mode .emp-only {
+  display: revert !important;
+}
+.employee-mode .nav-item.emp-only {
+  display: flex !important;
+}
+.employee-mode .admin-only {
+  display: none !important;
+}
+
 /* responsive */
 @media (max-width: 1200px) {
   .run {

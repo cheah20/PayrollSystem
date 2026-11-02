@@ -289,33 +289,41 @@ function setLoginTab(role, el) {
   setActiveTab(el);
   document.getElementById("loginEmail").value = role === "admin" ? "admin@lxx.example" : "chong.ahzhu@lxx.example";
 }
+let meIdx = null;
 function doLogin() {
   dbInit();
   employees = getEmployees();
   document.getElementById("loginScreen").style.display = "none";
   document.getElementById("app").style.display = "flex";
-  if (loginRole === "employee") {
-    document.getElementById("sidebarName").textContent = "Chong Ah Zhu";
-    document.getElementById("sidebarRole").textContent = "Employee";
-    document.getElementById("sidebarAvatar").textContent = "CA";
-    document.querySelectorAll(".nav-section")[1].style.display = "none";
-    document.querySelectorAll(".nav-item").forEach((el) => {
-      if (/Employees|Settings|Reports/.test(el.textContent)) el.style.display = "none";
-    });
-    nav("payslip", document.querySelector('[onclick*="payslip"]'));
-    buildPayslip();
-  }
   loadSettingsIntoForm();
   refreshAll();
   calcPayroll();
+  if (loginRole === "employee") {
+    meIdx = Math.max(0, employees.findIndex((e) => e.email === document.getElementById("loginEmail").value.trim()));
+    const me = employees[meIdx];
+    document.getElementById("app").classList.add("employee-mode");
+    document.getElementById("sidebarName").textContent = me.name;
+    document.getElementById("sidebarRole").textContent = "Employee";
+    document.getElementById("sidebarAvatar").textContent = initials(me.name);
+    viewPayslipFor(meIdx);
+  } else {
+    nav("dashboard", document.querySelector(".nav-item"));
+  }
 }
 function doLogout() {
   document.getElementById("app").style.display = "none";
   document.getElementById("loginScreen").style.display = "flex";
-  document.querySelectorAll(".nav-item,.nav-section").forEach((el) => (el.style.display = ""));
+  document.getElementById("app").classList.remove("employee-mode");
+  meIdx = null;
   document.getElementById("sidebarName").textContent = "HR Admin";
   document.getElementById("sidebarRole").textContent = "Administrator";
   document.getElementById("sidebarAvatar").textContent = "HR";
+}
+const isEmployee = () => meIdx !== null;
+function openMyProfile(el) {
+  viewEmployee(meIdx);
+  document.querySelectorAll(".nav-item").forEach((n) => n.classList.remove("active"));
+  el.classList.add("active");
 }
 
 // pages
@@ -329,14 +337,18 @@ const pageMeta = {
   "employee-view": { title: "Employee Profile", breadcrumb: "Employees / Profile", btn: "Edit Employee" },
 };
 function nav(id, el) {
+  if (isEmployee() && id !== "payslip" && id !== "employee-view") {
+    id = "payslip";
+    el = document.getElementById("navPayslip");
+  }
   document.querySelectorAll(".page").forEach((p) => p.classList.remove("active"));
   document.querySelectorAll(".nav-item").forEach((n) => n.classList.remove("active"));
   document.getElementById("page-" + id).classList.add("active");
   if (el) el.classList.add("active");
-  const meta = pageMeta[id];
+  const meta = isEmployee() ? { payslip: { title: "My Payslip", breadcrumb: "Slip Gaji" }, "employee-view": { title: "My Profile", breadcrumb: "Personal details" } }[id] : pageMeta[id];
   document.getElementById("pageTitle").textContent = meta.title;
   document.getElementById("pageBreadcrumb").textContent = meta.breadcrumb;
-  document.getElementById("topActionBtn").textContent = meta.btn;
+  document.getElementById("topActionBtn").textContent = meta.btn || "";
 }
 function topAction() {
   const id = document.querySelector(".page.active").id.replace("page-", "");
@@ -407,6 +419,7 @@ function searchEmp(q) {
   );
 }
 function viewEmployee(idx) {
+  if (isEmployee()) idx = meIdx;
   const e = employees[idx];
   const set = (id, val) => (document.getElementById(id).textContent = val);
   set("ev-avatar", initials(e.name));
@@ -647,6 +660,7 @@ function generatePayslipFromView() {
   viewPayslipFor(Number(document.getElementById("ev-status").dataset.idx));
 }
 function viewPayslipFor(idx) {
+  if (isEmployee()) idx = meIdx;
   document.getElementById("calcEmp").value = idx;
   pickCalcEmp();
   nav("payslip", document.querySelector("[onclick*=payslip]"));
