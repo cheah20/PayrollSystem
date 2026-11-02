@@ -10,7 +10,7 @@ A payroll system I built during my Diploma internship at a Malaysian retail comp
 
 HR staff use it to keep employee records, run monthly payroll and print payslips. It works out Malaysian statutory contributions (EPF, SOCSO, EIS and PCB) and exports the files needed for submission and bank payment.
 
-It runs fully in the browser. Data is saved in `localStorage`, so there is no server or database to set up.
+The version used at the company stored its data in MySQL. This public demo keeps the data in the browser's `localStorage` instead, so it runs without a server or database.
 
 All employees, IC numbers and bank accounts are made-up demo data.
 
@@ -59,7 +59,8 @@ PCB is an estimate for the demo. A real payroll should use the LHDN calculator o
 ## Technologies
 
 - HTML, CSS and plain JavaScript, no framework and no build step
-- `localStorage` for data
+- MySQL for data in the original company version
+- `localStorage` for data in this public demo
 - Google Fonts (Archivo)
 
 ## Getting Started
