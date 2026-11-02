@@ -1,5 +1,12 @@
 # Payroll System
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open-2ea44f?logo=githubpages&logoColor=white)](https://cheah20.github.io/Payroll-System/)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
+![Status](https://img.shields.io/badge/status-completed-3f6fb6)
+
 A payroll system I built during my Diploma internship at a Malaysian retail company.
 
 > To protect the privacy of the company I interned with, its name and logo have been blurred throughout this project.
