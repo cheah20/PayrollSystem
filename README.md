@@ -85,3 +85,9 @@ Payroll System/
 - Payroll maths lives in `payFor()` and `calcPayroll()` in `app.js`.
 - Data stays in the browser it was entered in. Clearing site data resets it.
 - Forgot password and create account are demo screens only. Nothing is sent and passwords are not stored.
+
+## Copyright
+
+© 2024 cheah20. All rights reserved.
+
+This project is shared for portfolio viewing only. Please do not copy, reuse or submit it as your own work. See [LICENSE](LICENSE).
