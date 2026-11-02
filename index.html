@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>LXX Payroll</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- login -->
+<div id="loginScreen">
+  <div class="login-card">
+    <div class="login-logo">
+      <div class="login-logo-icon"><img src="data:image/jpeg;base64,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" alt=""/></div>
+      <div class="login-logo-text">LXX Payroll<span>Sdn. Bhd.</span></div>
+    </div>
+    <h1 class="login-title"><mark>Sign in</mark></h1>
+    <p class="login-tagline">Run payroll, EPF, SOCSO, EIS and PCB in one place.</p>
+    <div class="login-tabs">
+      <div class="login-tab active" onclick="setLoginTab('admin',this)">Admin / HR</div>
+      <div class="login-tab" onclick="setLoginTab('employee',this)">Employee</div>
+    </div>
+    <div class="login-field">
+      <label for="loginEmail">Email</label>
+      <input class="login-input" type="email" id="loginEmail" value="admin@lxx.example"/>
+    </div>
+    <div class="login-field">
+      <label for="loginPass">Password</label>
+      <div class="pwd-wrap">
+        <input class="login-input" type="password" id="loginPass" value="password"/>
+        <button onclick="togglePwd()" type="button" id="eyeBtn" class="eye-btn" title="Show or hide password">
+          <svg id="eyeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </button>
+      </div>
+    </div>
+    <button class="login-btn" onclick="doLogin()">Sign In</button>
+    <div class="login-links">
+      <span class="login-link" onclick="openModal('modalForgotPwd')">Forgot password?</span>
+      <span class="login-link" onclick="openModal('modalCreateAcc')">Create account</span>
+    </div>
+  </div>
+  <p class="login-foot">Demo data only. Names and numbers are made up.</p>
+</div>
+
+<!-- app -->
+<div id="app">
+  <!-- sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-head">
+      <div class="s-logo-icon"><img src="data:image/jpeg;base64,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" alt=""/></div>
+      <div>
+        <div class="s-logo-text">LXX Payroll</div>
+        <div class="s-logo-sub">Sdn. Bhd.</div>
+      </div>
+    </div>
+    <label class="side-search">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6.5" cy="6.5" r="4"/><path d="M11 11l3 3"/></svg>
+      <input id="menuSearch" placeholder="Search menu" oninput="filterMenu(this.value)"/>
+      <kbd>F3</kbd>
+    </label>
+    <div class="sidebar-nav">
+      <div class="nav-section">Overview</div>
+      <div class="nav-item active" onclick="nav('dashboard',this)">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="1" width="6" height="6" rx="1.5"/><rect x="9" y="1" width="6" height="6" rx="1.5"/><rect x="1" y="9" width="6" height="6" rx="1.5"/><rect x="9" y="9" width="6" height="6" rx="1.5"/></svg>
+        Dashboard
+      </div>
+      <div class="nav-section">People</div>
+      <div class="nav-item" onclick="nav('employees',this)">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8" cy="5" r="3"/><path d="M2 15c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg>
+        Employees
+        <span class="nav-badge" id="empBadge">9</span>
+      </div>
+      <div class="nav-section">Payroll</div>
+      <div class="nav-item" onclick="nav('runpayroll',this)">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="3" width="14" height="10" rx="1.5"/><path d="M5 8h6M5 11h3"/></svg>
+        Run Payroll
+      </div>
+      <div class="nav-item" onclick="nav('payslip',this)">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 1h7l4 4v10H3V1z"/><path d="M10 1v4h4"/><path d="M5 8h6M5 11h4"/></svg>
+        Payslips
+      </div>
+      <div class="nav-section">Compliance</div>
+      <div class="nav-item" onclick="nav('reports',this)">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="1,12 5,7 8,10 11,5 15,8"/></svg>
+        Reports &amp; Export
+        <span class="nav-badge nav-badge-warn">3</span>
+      </div>
+      <div class="nav-section">Admin</div>
+      <div class="nav-item" onclick="nav('settings',this)">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8" cy="8" r="2.5"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.1 3.1l1.4 1.4M11.5 11.5l1.4 1.4M3.1 12.9l1.4-1.4M11.5 4.5l1.4-1.4"/></svg>
+        Settings
+      </div>
+    </div>
+    <div class="sidebar-footer">
+      <div class="user-card">
+        <div class="user-avatar" id="sidebarAvatar">HR</div>
+        <div class="user-info">
+          <div class="user-name" id="sidebarName">HR Admin</div>
+          <div class="user-role" id="sidebarRole">Administrator</div>
+        </div>
+        <button class="user-logout" onclick="doLogout()" title="Log out">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 8h8M11 5l3 3-3 3"/><path d="M10 3H3v10h7"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div class="main">
+    <!-- recent menus -->
+    <div class="quickbar">
+      <span class="quickbar-label">Recent</span>
+      <a onclick="nav('reports',document.querySelector('[onclick*=reports]'))">Payroll Book</a>
+      <a onclick="nav('reports',document.querySelector('[onclick*=reports]'))">EPF Form A</a>
+      <a onclick="nav('reports',document.querySelector('[onclick*=reports]'))">PCB CP39</a>
+      <a onclick="nav('payslip',document.querySelector('[onclick*=payslip]'))">Payslips</a>
+      <span class="quickbar-keys"><kbd>F2</kbd> New employee <kbd>F3</kbd> Search <kbd>F8</kbd> Export</span>
+    </div>
+    <div class="topbar">
+      <div class="topbar-left">
+        <div class="page-title"><mark id="pageTitle">Dashboard</mark></div>
+        <div class="breadcrumb" id="pageBreadcrumb">Overview</div>
+      </div>
+      <div class="topbar-right">
+        <div class="tb-badge" id="tbDate">March 2023</div>
+        <button class="btn btn-icon notif-dot" onclick="showToast('3 tasks pending submission','info')" title="Notifications">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 1a5 5 0 015 5v3l1.5 2H1.5L3 9V6a5 5 0 015-5z"/><path d="M6.5 13a1.5 1.5 0 003 0"/></svg>
+        </button>
+        <button class="btn btn-primary" id="topActionBtn" onclick="topAction()">+ New Employee</button>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <!-- dashboard -->
+      <div id="page-dashboard" class="page active">
+        <div class="metrics-grid">
+          <div class="metric-card blue">
+            <div class="metric-label">Total Employees</div>
+            <div class="metric-value">9</div>
+            <div class="metric-sub"><span class="up">↑ 2</span> new this month</div>
+          </div>
+          <div class="metric-card orange">
+            <div class="metric-label">Gross Payroll</div>
+            <div class="metric-value">RM 43,550</div>
+            <div class="metric-sub"><span class="up">↑ 3.1%</span> vs last month</div>
+          </div>
+          <div class="metric-card amber">
+            <div class="metric-label">Employer Contributions</div>
+            <div class="metric-value">RM 6,280</div>
+            <div class="metric-sub">EPF + SOCSO + EIS</div>
+          </div>
+          <div class="metric-card green">
+            <div class="metric-label">Net Disbursement</div>
+            <div class="metric-value">RM 37,270</div>
+            <div class="metric-sub"><span class="up">Processed</span> Feb 2023</div>
+          </div>
+        </div>
+
+        <!-- one row per department -->
+        <div class="card">
+          <div class="card-title">
+            <span>Payroll runs, March 2023</span>
+            <span class="card-meta">4 departments · pay day 31 Mar</span>
+          </div>
+          <div class="runs">
+            <div class="run">
+              <div class="run-date"><b>25</b>Mar</div>
+              <div class="run-name"><b>Management</b><span>1 person · RM 7,500</span></div>
+              <div class="track" style="--done:2">
+                <i class="on"></i><i class="on"></i><i class="on"></i>
+                <em>Inputs checked</em><em>Approved</em><em>Pay day</em>
+              </div>
+              <span class="pill pill-ok">Paid</span>
+              <button class="btn btn-sm" onclick="nav('payslip',document.querySelector('[onclick*=payslip]'))">View</button>
+            </div>
+            <div class="run">
+              <div class="run-date"><b>28</b>Mar</div>
+              <div class="run-name"><b>Sales</b><span>2 people · RM 6,600</span></div>
+              <div class="track" style="--done:1">
+                <i class="on"></i><i class="on"></i><i></i>
+                <em>Inputs checked</em><em>Approved</em><em>Pay day</em>
+              </div>
+              <span class="pill pill-ready">Ready to pay</span>
+              <button class="btn btn-sm" onclick="nav('runpayroll',document.querySelector('[onclick*=runpayroll]'))">Open</button>
+            </div>
+            <div class="run">
+              <div class="run-date"><b>28</b>Mar</div>
+              <div class="run-name"><b>Technical</b><span>4 people · RM 11,200</span></div>
+              <div class="track" style="--done:0.5">
+                <i class="on"></i><i></i><i></i>
+                <em>Inputs checked</em><em>Approved</em><em>Pay day</em>
+              </div>
+              <span class="pill pill-wait">Needs you</span>
+              <button class="btn btn-sm btn-primary" onclick="nav('runpayroll',document.querySelector('[onclick*=runpayroll]'))">Approve</button>
+            </div>
+            <div class="run">
+              <div class="run-date"><b>30</b>Mar</div>
+              <div class="run-name"><b>Marketing</b><span>2 people · RM 4,300</span></div>
+              <div class="track" style="--done:0">
+                <i class="on"></i><i></i><i></i>
+                <em>Inputs checked</em><em>Approved</em><em>Pay day</em>
+              </div>
+              <span class="pill pill-stop">Bank details missing</span>
+              <button class="btn btn-sm" onclick="nav('employees',document.querySelector('[onclick*=employees]'))">Fix</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- deadlines -->
+        <div class="notes">
+          <div class="note note-y">
+            <b>EPF Form A</b>
+            <p>Feb 2023 contributions. Upload on i-Akaun.</p>
+            <span>Due 15 May</span>
+          </div>
+          <div class="note note-b">
+            <b>SOCSO Form 8A</b>
+            <p>SOCSO and EIS together on the EzEIS portal.</p>
+            <span>Due 15 May</span>
+          </div>
+          <div class="note note-g">
+            <b>PCB CP39</b>
+            <p>Sent on MyTax. Nothing left to do.</p>
+            <span>Done</span>
+          </div>
+          <div class="note note-p">
+            <b>HRD Corp levy</b>
+            <p>1% of gross salary for 10 staff and above.</p>
+            <span>Due 30 May</span>
+          </div>
+        </div>
+
+        <div class="grid-2-1">
+          <div class="card">
+            <div class="card-title">
+              <span>Payroll history</span>
+              <div class="tabs tabs-sm">
+                <div class="tab active">6M</div>
+                <div class="tab">1Y</div>
+              </div>
+            </div>
+            <div class="chart-bars">
+              <div class="cbar" style="height:60%"><div class="cbar-tip">RM 78k</div></div>
+              <div class="cbar" style="height:68%"><div class="cbar-tip">RM 80k</div></div>
+              <div class="cbar" style="height:72%"><div class="cbar-tip">RM 82k</div></div>
+              <div class="cbar" style="height:78%"><div class="cbar-tip">RM 84k</div></div>
+              <div class="cbar" style="height:85%"><div class="cbar-tip">RM 87k</div></div>
+              <div class="cbar cbar-next" style="height:55%"><div class="cbar-tip">Not paid yet</div></div>
+            </div>
+            <div class="chart-labels">
+              <div class="chart-label">Nov</div><div class="chart-label">Dec</div>
+              <div class="chart-label">Jan</div><div class="chart-label">Feb</div>
+              <div class="chart-label">Mar</div><div class="chart-label">Apr</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">Payroll breakdown</div>
+            <div class="bd-row"><span>Basic salary</span><b>RM 36,100</b></div>
+            <div class="prog-bar"><div class="prog-fill" style="width:82%"></div></div>
+            <div class="bd-row"><span>Allowances</span><b>RM 7,450</b></div>
+            <div class="prog-bar"><div class="prog-fill" style="width:18%"></div></div>
+            <div class="bd-row"><span>EPF (EE 11%)</span><b>RM 4,791</b></div>
+            <div class="prog-bar"><div class="prog-fill" style="width:13%"></div></div>
+            <div class="bd-row"><span>SOCSO + EIS</span><b>RM 515</b></div>
+            <div class="prog-bar"><div class="prog-fill" style="width:5%"></div></div>
+            <div class="bd-row"><span>PCB / MTD</span><b>RM 2,974</b></div>
+            <div class="prog-bar"><div class="prog-fill" style="width:9%"></div></div>
+            <div class="bd-row bd-total"><span>Net disbursement</span><b>RM 37,270</b></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- employees -->
+      <div id="page-employees" class="page">
+        <div class="toolbar">
+          <div class="tabs">
+            <div class="tab active" onclick="filterEmp('all',this)">All (9)</div>
+            <div class="tab" onclick="filterEmp('active',this)">Active</div>
+            <div class="tab" onclick="filterEmp('leave',this)">On Leave</div>
+            <div class="tab" onclick="filterEmp('resigned',this)">Resigned</div>
+          </div>
+          <div class="toolbar-right">
+            <div class="search-bar">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6.5" cy="6.5" r="4"/><path d="M11 11l3 3"/></svg>
+              <input id="empSearch" placeholder="Name, IC or staff no" oninput="searchEmp(this.value)"/>
+            </div>
+          </div>
+        </div>
+        <div class="erp-grid">
+          <div class="erp-head">
+            <b>Employee list</b>
+            <span>Company Name : LXX Sdn. Bhd.</span>
+            <div class="erp-actions">
+              <button class="btn btn-sm" onclick="openAddEmpModal()">New <kbd>F2</kbd></button>
+              <button class="btn btn-sm" onclick="document.getElementById('empSearch').focus()">Search <kbd>F3</kbd></button>
+              <button class="btn btn-sm" onclick="exportPayrollCSV()">Export <kbd>F8</kbd></button>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table id="empTable" class="numbered">
+              <thead><tr><th>Employee</th><th>IC / Passport</th><th>Department</th><th>Position</th><th class="num">Basic Salary</th><th>Join Date</th><th>Status</th><th></th></tr></thead>
+              <tbody id="empTbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- employee view -->
+      <div id="page-employee-view" class="page">
+        <button class="btn btn-sm" onclick="nav('employees',document.querySelector('[onclick*=employees]'))" style="margin-bottom:16px">Back to employees</button>
+        <div class="emp-header">
+          <div class="emp-avatar-lg" id="ev-avatar">AH</div>
+          <div>
+            <div class="ev-name" id="ev-name">Chong Ah Zhu</div>
+            <div class="ev-pos" id="ev-pos">Senior Engineer · Engineering</div>
+            <div class="ev-tags">
+              <select id="ev-status" onchange="changeEmpStatus(this.dataset.idx,this.value)">
+                <option value="active">Aktif</option>
+                <option value="leave">Cuti</option>
+                <option value="resigned">Berhenti</option>
+              </select>
+              <span class="badge badge-blue" id="ev-type">Full-time</span>
+            </div>
+          </div>
+          <div class="ev-actions">
+            <button class="btn btn-sm" onclick="nav('runpayroll',document.querySelector('[onclick*=runpayroll]'))">Run Payroll</button>
+            <button class="btn btn-sm btn-primary" onclick="generatePayslipFromView()">Generate Payslip</button>
+          </div>
+        </div>
+        <div class="emp-detail-grid">
+          <div class="emp-detail-item"><div class="emp-detail-label">IC Number</div><div class="emp-detail-value" id="ev-ic">000001-00-0001</div></div>
+          <div class="emp-detail-item"><div class="emp-detail-label">Email</div><div class="emp-detail-value" id="ev-email">chong.ahzhu@lxx.example</div></div>
+          <div class="emp-detail-item"><div class="emp-detail-label">Phone</div><div class="emp-detail-value" id="ev-phone">+60 12-345 6789</div></div>
+          <div class="emp-detail-item"><div class="emp-detail-label">Bank</div><div class="emp-detail-value" id="ev-bank">Maybank</div></div>
+          <div class="emp-detail-item"><div class="emp-detail-label">Account No</div><div class="emp-detail-value" id="ev-acc">1234567890</div></div>
+          <div class="emp-detail-item"><div class="emp-detail-label">Basic Salary</div><div class="emp-detail-value" id="ev-salary">RM 5,500</div></div>
+        </div>
+        <div class="erp-grid">
+          <div class="erp-head"><b>Payroll history</b></div>
+          <div class="table-wrap">
+            <table class="numbered">
+              <thead><tr><th>Month</th><th>Gross</th><th>EPF (EE)</th><th>SOCSO</th><th>PCB</th><th>Net Pay</th><th></th></tr></thead>
+              <tbody id="ev-payhistory"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- run payroll -->
+      <div id="page-runpayroll" class="page">
+        <div class="card steps-card">
+          <div class="track track-lg" id="runSteps" style="--done:0">
+            <i class="on"></i><i></i><i></i>
+            <em>Pick employee</em><em>Check pay and deductions</em><em>Generate payslip</em>
+          </div>
+        </div>
+        <div class="grid-1-1">
+          <div>
+            <div class="card">
+              <div class="card-title">Select employee</div>
+              <div class="erp-form">
+                <div class="form-group">
+                  <label class="fl" for="calcEmp">Employee</label>
+                  <select id="calcEmp" onchange="pickCalcEmp()">
+                    <option value="">Select employee</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="fl" for="calcMonth">Payroll month</label>
+                  <select id="calcMonth"><option>March 2023</option><option>February 2023</option><option>January 2023</option></select>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Earnings</div>
+              <div class="erp-form">
+                <div class="form-group">
+                  <label class="fl" for="cBasic">Basic salary</label>
+                  <div class="input-group"><span class="input-prefix">RM</span><input type="number" id="cBasic" value="5000" oninput="calcPayroll()"/></div>
+                </div>
+                <div class="form-group">
+                  <label class="fl" for="cTransport">Transport allowance</label>
+                  <div class="input-group"><span class="input-prefix">RM</span><input type="number" id="cTransport" value="300" oninput="calcPayroll()"/></div>
+                </div>
+                <div class="form-group">
+                  <label class="fl" for="cAllowance">Other allowances</label>
+                  <div class="input-group"><span class="input-prefix">RM</span><input type="number" id="cAllowance" value="200" oninput="calcPayroll()"/></div>
+                </div>
+                <div class="form-group">
+                  <label class="fl" for="cOT">Overtime</label>
+                  <div class="input-group"><span class="input-prefix">RM</span><input type="number" id="cOT" value="0" oninput="calcPayroll()"/></div>
+                </div>
+                <div class="form-group">
+                  <label class="fl" for="cBonus">Bonus</label>
+                  <div class="input-group"><span class="input-prefix">RM</span><input type="number" id="cBonus" value="0" oninput="calcPayroll()"/></div>
+                </div>
+                <div class="form-group">
+                  <label class="fl" for="cUnpaid">Unpaid leave</label>
+                  <div class="input-group"><span class="input-prefix">RM</span><input type="number" id="cUnpaid" value="0" oninput="calcPayroll()"/></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Statutory contributions</div>
+              <div class="checks">
+                <label><input type="checkbox" id="chkEpf" checked onchange="calcPayroll()"> EPF</label>
+                <label><input type="checkbox" id="chkSocso" checked onchange="calcPayroll()"> SOCSO</label>
+                <label><input type="checkbox" id="chkEis" checked onchange="calcPayroll()"> EIS</label>
+                <label><input type="checkbox" id="chkPcb" checked onchange="calcPayroll()"> PCB / MTD</label>
+              </div>
+              <table class="rate-table">
+                <thead><tr><th></th><th class="num">EPF</th><th class="num">SOCSO</th><th class="num">EIS</th></tr></thead>
+                <tbody>
+                  <tr><td>Employee</td><td class="num">11%</td><td class="num">0.5%</td><td class="num">0.2%</td></tr>
+                  <tr><td>Employer</td><td class="num">13% / 12%</td><td class="num">1.75%</td><td class="num">0.4%</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- result -->
+          <div>
+            <div class="card result-card">
+              <div class="card-title">Payslip preview</div>
+              <div class="pr-box">
+                <div class="pr-label">Earnings</div>
+                <div class="pr-row"><span>Basic Salary</span><span class="pr-num" id="r-basic">RM 5,000.00</span></div>
+                <div class="pr-row"><span>Transport Allowance</span><span class="pr-num" id="r-transport">RM 300.00</span></div>
+                <div class="pr-row"><span>Other Allowances</span><span class="pr-num" id="r-allow">RM 200.00</span></div>
+                <div class="pr-row"><span>Overtime</span><span class="pr-num" id="r-ot">RM 0.00</span></div>
+                <div class="pr-row"><span>Bonus</span><span class="pr-num" id="r-bonus">RM 0.00</span></div>
+                <div class="pr-row pr-total"><span>Gross Earnings</span><span class="pr-num" id="r-gross">RM 5,500.00</span></div>
+
+                <div class="pr-label">Deductions</div>
+                <div class="pr-row"><span>EPF Employee (11%)</span><span class="pr-num pr-neg" id="r-epfEE">- RM 0.00</span></div>
+                <div class="pr-row"><span>SOCSO (0.5%)</span><span class="pr-num pr-neg" id="r-socso">- RM 0.00</span></div>
+                <div class="pr-row"><span>EIS (0.2%)</span><span class="pr-num pr-neg" id="r-eis">- RM 0.00</span></div>
+                <div class="pr-row"><span>PCB / MTD</span><span class="pr-num pr-neg" id="r-pcb">- RM 0.00</span></div>
+                <div class="pr-row"><span>Unpaid Leave</span><span class="pr-num pr-neg" id="r-unpaid">- RM 0.00</span></div>
+              </div>
+
+              <div class="pr-net-box">
+                <div><div class="pr-net-label">Net pay</div><div class="pr-net-month" id="r-month">March 2023</div></div>
+                <div class="pr-net-val" id="r-net">RM 0.00</div>
+              </div>
+
+              <div class="pr-er-box">
+                <div class="pr-er-title">Employer pays on top (not taken from salary)</div>
+                <div class="er-grid">
+                  <div><span>EPF</span><b id="r-epfER">RM 0.00</b></div>
+                  <div><span>SOCSO</span><b id="r-socsoER">RM 0.00</b></div>
+                  <div><span>EIS</span><b id="r-eisER">RM 0.00</b></div>
+                </div>
+                <div class="er-total"><span>Total cost to company</span><b id="r-totalCost">RM 0.00</b></div>
+              </div>
+
+              <div class="result-actions">
+                <button class="btn btn-primary" onclick="nav('payslip',document.querySelector('[onclick*=payslip]'));buildPayslip()">Generate Payslip</button>
+                <button class="btn" onclick="exportPayrollCSV()">CSV</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- payslip -->
+      <div id="page-payslip" class="page">
+        <div class="toolbar">
+          <div class="tabs">
+            <div class="tab active" onclick="setPayslipTab('preview',this)">Preview</div>
+            <div class="tab" onclick="setPayslipTab('bulk',this)">Cetak Semua</div>
+          </div>
+          <div class="toolbar-right">
+            <button class="btn btn-sm" onclick="printPayslip()">Print <kbd>Ctrl P</kbd></button>
+            <button class="btn btn-sm btn-primary" onclick="exportPayslipHTML()">Download HTML</button>
+          </div>
+        </div>
+        <div id="payslip-preview-tab">
+          <div class="payslip" id="payslipDoc">
+            <div class="payslip-head">
+              <div class="payslip-brand">
+                <img id="ps-logo" src="" alt=""/>
+                <div>
+                  <div class="payslip-month" id="ps-month">Salary Slip — March 2023</div>
+                  <div class="payslip-company-line">Company Name : <span class="payslip-company" id="ps-company">LXX Sdn. Bhd.</span></div>
+                </div>
+              </div>
+              <div class="payslip-tag">Confidential</div>
+            </div>
+            <div class="payslip-info">
+              <div class="payslip-info-row"><strong>Name</strong><span id="ps-name">Chong Ah Zhu</span></div>
+              <div class="payslip-info-row"><strong>Staff No</strong><span id="ps-staffno">EMP-001</span></div>
+              <div class="payslip-info-row"><strong>IC / Passport</strong><span id="ps-ic">000001-00-0001</span></div>
+              <div class="payslip-info-row"><strong>Department</strong><span id="ps-dept">Engineering</span></div>
+              <div class="payslip-info-row"><strong>Position</strong><span id="ps-pos">Senior Engineer</span></div>
+              <div class="payslip-info-row"><strong>Join Date</strong><span id="ps-join">01 Jan 2020</span></div>
+            </div>
+            <div class="payslip-cols">
+              <div>
+                <div class="payslip-col-head">Earnings</div>
+                <div id="ps-earn-rows"></div>
+                <div class="payslip-col-total"><span>Total Earnings</span><span id="ps-total-earn">0.00</span></div>
+              </div>
+              <div>
+                <div class="payslip-col-head">Deductions</div>
+                <div id="ps-ded-rows"></div>
+                <div class="payslip-col-total"><span>Total Deductions</span><span id="ps-total-ded">0.00</span></div>
+              </div>
+            </div>
+            <div class="payslip-net">
+              <div>
+                <div class="payslip-net-label">Net Pay</div>
+                <div class="payslip-net-month" id="ps-net-month">March 2023</div>
+              </div>
+              <div class="payslip-net-value" id="ps-net">RM 0.00</div>
+            </div>
+            <div class="payslip-bank">
+              <strong>Payment Date:</strong> <span id="ps-paydate">31 March 2023</span> &nbsp;|&nbsp;
+              <strong>Bank:</strong> <span id="ps-bank">Maybank</span> &nbsp;|&nbsp;
+              <strong>Account:</strong> <span id="ps-acc">1234567890</span>
+            </div>
+            <div class="payslip-er-box">
+              <div class="payslip-er-title">Employer statutory contributions (for reference)</div>
+              <div class="payslip-er-row"><span>EPF Employer Contribution</span><span id="ps-er-epf">RM 0.00</span></div>
+              <div class="payslip-er-row"><span>SOCSO Employer Contribution</span><span id="ps-er-socso">RM 0.00</span></div>
+              <div class="payslip-er-row"><span>EIS Employer Contribution</span><span id="ps-er-eis">RM 0.00</span></div>
+            </div>
+          </div>
+        </div>
+        <div id="payslip-bulk-tab" style="display:none">
+          <div class="card">
+            <div class="card-title">Cetak slip gaji, semua pekerja</div>
+            <p class="muted">Generate and download payslips for every employee in the month you pick.</p>
+            <div class="erp-form">
+              <div class="form-group"><label class="fl" for="bulkMonth">Month</label><select id="bulkMonth"><option>March 2023</option><option>February 2023</option></select></div>
+              <div class="form-group"><label class="fl" for="bulkDept">Department</label><select id="bulkDept"><option>All departments</option><option>Management</option><option>Sales</option><option>Technical</option><option>Marketing</option></select></div>
+            </div>
+            <div class="result-actions">
+              <button class="btn btn-primary" onclick="showToast('Generating 8 payslips...','info');setTimeout(()=>showToast('8 payslips exported as HTML','success'),1500)">Generate all payslips</button>
+              <button class="btn" onclick="exportEPFtxt()">EPF .txt</button>
+              <button class="btn" onclick="exportSOCSO()">SOCSO .txt</button>
+              <button class="btn" onclick="exportCP39()">CP39 .txt</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- reports -->
+      <div id="page-reports" class="page">
+        <div class="erp-grid">
+          <div class="erp-head">
+            <b>Statutory reports</b>
+            <span>Company Name : LXX Sdn. Bhd. / March 2023</span>
+          </div>
+          <table class="numbered">
+            <thead><tr><th>Form</th><th>Report</th><th>Where to submit</th><th>Status</th><th></th></tr></thead>
+            <tbody>
+              <tr><td><span class="form-code">A</span></td><td><b>EPF Form A</b><div class="sub">Monthly contribution schedule</div></td><td>i-Akaun</td><td><span class="pill pill-wait">Due 15 May</span></td><td class="act"><button class="btn btn-sm" onclick="exportEPFtxt()">Export .txt</button></td></tr>
+              <tr><td><span class="form-code">8A</span></td><td><b>SOCSO Form 8A</b><div class="sub">Monthly SOCSO and EIS</div></td><td>EzEIS</td><td><span class="pill pill-wait">Due 15 May</span></td><td class="act"><button class="btn btn-sm" onclick="exportSOCSO()">Export .txt</button></td></tr>
+              <tr><td><span class="form-code">CP39</span></td><td><b>PCB / MTD</b><div class="sub">Monthly income tax deduction</div></td><td>MyTax</td><td><span class="pill pill-ok">Submitted</span></td><td class="act"><button class="btn btn-sm" onclick="exportCP39()">Re-export</button></td></tr>
+              <tr><td><span class="form-code">EA</span></td><td><b>EA Form</b><div class="sub">Yearly income statement per employee</div></td><td>LHDN</td><td><span class="pill">Yearly</span></td><td class="act"><button class="btn btn-sm" onclick="showToast('EA Form exported','success')">Export</button></td></tr>
+              <tr><td><span class="form-code">HRD</span></td><td><b>HRD Corp levy</b><div class="sub">Monthly training levy</div></td><td>HRDCorp</td><td><span class="pill">Due 30 May</span></td><td class="act"><button class="btn btn-sm" onclick="showToast('HRD Corp report exported','success')">Export</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="erp-grid">
+          <div class="erp-head"><b>Payroll reports</b></div>
+          <table class="numbered">
+            <thead><tr><th>Report</th><th>What is inside</th><th></th></tr></thead>
+            <tbody>
+              <tr><td><b>Payroll summary</b></td><td>All employees, monthly breakdown</td><td class="act"><button class="btn btn-sm" onclick="exportPayrollCSV()">CSV</button></td></tr>
+              <tr><td><b>Bank payment file</b></td><td>Maybank / CIMB / RHB IBG format</td><td class="act"><button class="btn btn-sm" onclick="exportBankFile()">.txt</button></td></tr>
+              <tr><td><b>Slip gaji semua pekerja</b></td><td>All employees, HTML format</td><td class="act"><button class="btn btn-sm" onclick="nav('payslip',document.querySelector('[onclick*=payslip]'))">Generate</button></td></tr>
+              <tr><td><b>Headcount report</b></td><td>New hires, exits, department split</td><td class="act"><button class="btn btn-sm" onclick="showToast('Headcount report downloaded','success')">CSV</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="erp-grid">
+          <div class="erp-head"><b>Statutory contribution rates, Malaysia 2023</b></div>
+          <div class="table-wrap">
+            <table class="contrib-table">
+              <thead><tr><th>Contribution</th><th class="num">Employee</th><th class="num">Employer</th><th>Wage ceiling</th><th>Portal</th><th>Deadline</th></tr></thead>
+              <tbody>
+                <tr><td>EPF (KWSP)</td><td class="num">11%</td><td class="num">13% (≤RM5k) / 12% (&gt;RM5k)</td><td>No cap</td><td>i-Akaun</td><td>15th of next month</td></tr>
+                <tr><td>SOCSO</td><td class="num">0.5%</td><td class="num">1.75%</td><td>RM 5,000 / mo</td><td>EzEIS</td><td>15th of next month</td></tr>
+                <tr><td>EIS</td><td class="num">0.2%</td><td class="num">0.4%</td><td>RM 5,000 / mo</td><td>EzEIS</td><td>15th of next month</td></tr>
+                <tr><td>PCB / MTD</td><td class="num">Per LHDN table</td><td class="num">—</td><td>Monthly schedule</td><td>MyTax</td><td>15th of next month</td></tr>
+                <tr><td>HRD Corp levy</td><td class="num">—</td><td class="num">1% (≥10 staff)</td><td>Gross salary</td><td>HRDCorp</td><td>Last day of month</td></tr>
+                <tr><td>Zakat (Muslim EE)</td><td class="num">Optional</td><td class="num">—</td><td>Variable</td><td>Majlis Agama</td><td>Monthly</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- settings -->
+      <div id="page-settings" class="page">
+        <div class="grid-1-1">
+          <div class="card">
+            <div class="card-title">Company information</div>
+            <div class="erp-form">
+              <div class="form-group"><label class="fl" for="s-company">Company name</label><input type="text" id="s-company" value="LXX Sdn. Bhd."/></div>
+              <div class="form-group"><label class="fl">SSM registration no</label><input type="text" value="1234567-A"/></div>
+              <div class="form-group"><label class="fl">EPF employer no</label><input type="text" value="E000123456"/></div>
+              <div class="form-group"><label class="fl">SOCSO employer no</label><input type="text" value="S000456789"/></div>
+              <div class="form-group"><label class="fl">LHDN tax no (E No)</label><input type="text" value="E1234567890"/></div>
+              <div class="form-group"><label class="fl">HRD Corp no</label><input type="text" value="HR12345"/></div>
+            </div>
+            <div class="result-actions"><button class="btn btn-primary" onclick="saveSettings()">Save company info</button></div>
+          </div>
+          <div class="card">
+            <div class="card-title">Payroll setup</div>
+            <div class="erp-form">
+              <div class="form-group"><label class="fl">Pay cycle</label><select><option>Monthly (end of month)</option><option>Monthly (15th)</option><option>Bi-weekly</option></select></div>
+              <div class="form-group"><label class="fl" for="s-lang">Language</label><select id="s-lang" onchange="applyLanguage(this.value)"><option value="en">English</option><option value="bm">Bahasa Malaysia</option><option value="zh">中文 (Mandarin)</option></select></div>
+              <div class="form-group"><label class="fl">Currency</label><input type="text" value="MYR, Malaysian Ringgit" readonly/></div>
+              <div class="form-group"><label class="fl">Bank format</label><select><option>Maybank IBG</option><option>CIMB IBG</option><option>RHB IBG</option><option>Public Bank IBG</option></select></div>
+            </div>
+            <div class="section-head">Potongan wajib 2023</div>
+            <table class="rate-table">
+              <thead><tr><th></th><th class="num">Pekerja</th><th class="num">Majikan</th></tr></thead>
+              <tbody>
+                <tr><td>EPF / KWSP</td><td class="num">11%</td><td class="num">13% / 12%</td></tr>
+                <tr><td>SOCSO / PERKESO</td><td class="num">0.5%</td><td class="num">1.75%</td></tr>
+                <tr><td>EIS / SIP</td><td class="num">0.2%</td><td class="num">0.4%</td></tr>
+                <tr><td>PCB</td><td class="num" colspan="2">Jadual LHDN, ikut gaji bulanan</td></tr>
+              </tbody>
+            </table>
+            <div class="result-actions"><button class="btn btn-primary" onclick="saveSettings()">Save settings</button></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title"><span>Database status</span><span class="card-meta">saved in this browser (localStorage)</span></div>
+          <div id="dbStatusPanel" class="db-grid">
+            <div><b id="db-emp-count">9</b><span>Employees</span></div>
+            <div><b id="db-log-count">0</b><span>Payroll records</span></div>
+            <div><b id="db-size">—</b><span>Storage used</span></div>
+          </div>
+          <p class="muted">Data stays in this browser. Reset it before a new demo.</p>
+          <div class="result-actions">
+            <button class="btn btn-sm" onclick="refreshDBStatus()">Refresh status</button>
+            <button class="btn btn-sm btn-danger" onclick="resetDB()">Reset to demo data</button>
+          </div>
+        </div>
+
+        <div class="erp-grid">
+          <div class="erp-head"><b>User accounts</b></div>
+          <table class="numbered">
+            <thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Last login</th><th>Status</th><th></th></tr></thead>
+            <tbody>
+              <tr><td><b>HR Admin</b></td><td>admin@lxx.example</td><td><span class="badge badge-orange">Administrator</span></td><td>Today, 09:14</td><td><span class="pill pill-ok">Active</span></td><td class="act"><button class="btn btn-sm btn-ghost">Edit</button></td></tr>
+              <tr><td><b>Chong Ah Zhu</b></td><td>chong.ahzhu@lxx.example</td><td><span class="badge badge-blue">Employee</span></td><td>Yesterday</td><td><span class="pill pill-ok">Active</span></td><td class="act"><button class="btn btn-sm btn-ghost">Edit</button></td></tr>
+              <tr><td><b>Wong Kau Tim</b></td><td>wong.kautim@lxx.example</td><td><span class="badge badge-blue">Employee</span></td><td>3 days ago</td><td><span class="pill pill-ok">Active</span></td><td class="act"><button class="btn btn-sm btn-ghost">Edit</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- modals -->
+<div class="modal-backdrop" id="modalAddEmp">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title">Add New Employee</div>
+      <button class="modal-close" onclick="closeModal('modalAddEmp')" title="Close">✕</button>
+    </div>
+    <div class="form-grid">
+      <div class="form-group"><label class="fl">Full Name (as per IC)</label><input type="text" id="ne-name" placeholder="e.g. Chong Ah Zhu"/></div>
+      <div class="form-group"><label class="fl">IC / Passport No</label><input type="text" id="ne-ic" placeholder="e.g. 000001-00-0001"/></div>
+      <div class="form-group"><label class="fl">Email</label><input type="email" id="ne-email" placeholder="name@lxx.example"/></div>
+      <div class="form-group"><label class="fl">Phone</label><input type="text" id="ne-phone" placeholder="+60 12-345 6789"/></div>
+      <div class="form-group"><label class="fl">Department</label><select id="ne-dept"><option>Management</option><option>Sales</option><option>Technical</option><option>Marketing</option></select></div>
+      <div class="form-group"><label class="fl">Position / Job Title</label><input type="text" id="ne-pos" placeholder="e.g. Technician"/></div>
+      <div class="form-group"><label class="fl">Join Date</label><input type="date" id="ne-join" value="2023-03-01"/></div>
+      <div class="form-group"><label class="fl">Employment Type</label><select id="ne-type"><option>Full-time</option><option>Intern</option><option>Part-time</option><option>Contract</option></select></div>
+      <div class="form-group"><label class="fl">Basic Salary (RM)</label><div class="input-group"><span class="input-prefix">RM</span><input type="number" id="ne-salary" placeholder="3000"/></div></div>
+      <div class="form-group"><label class="fl">Transport Allowance (RM)</label><div class="input-group"><span class="input-prefix">RM</span><input type="number" id="ne-transport" placeholder="200"/></div></div>
+      <div class="form-group"><label class="fl">Other Allowance (RM)</label><div class="input-group"><span class="input-prefix">RM</span><input type="number" id="ne-allowance" placeholder="100"/></div></div>
+      <div class="form-group"><label class="fl">Bank</label><select id="ne-bank"><option>Maybank</option><option>CIMB</option><option>Public Bank</option><option>RHB</option><option>AmBank</option><option>Hong Leong Bank</option></select></div>
+      <div class="form-group"><label class="fl">Bank Account No</label><input type="text" id="ne-acc" placeholder="e.g. 1234567890"/></div>
+      <div class="form-group"><label class="fl">Religion (for PCB)</label><select id="ne-religion"><option>Non-Muslim</option><option>Islam</option></select></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="closeModal('modalAddEmp')">Cancel</button>
+      <button class="btn btn-primary" id="empSaveBtn" onclick="saveEmployee()">Save Employee</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modalForgotPwd">
+  <div class="modal modal-sm">
+    <div class="modal-header">
+      <div class="modal-title">Forgot password</div>
+      <button class="modal-close" onclick="closeModal('modalForgotPwd')" title="Close">✕</button>
+    </div>
+    <div class="form-grid one-col">
+      <div class="form-group"><label class="fl" for="fpEmail">Email</label><input type="email" id="fpEmail" placeholder="name@lxx.example"/></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="closeModal('modalForgotPwd')">Cancel</button>
+      <button class="btn btn-primary" onclick="submitForgotPwd()">Send reset link</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modalCreateAcc">
+  <div class="modal modal-sm">
+    <div class="modal-header">
+      <div class="modal-title">Create account</div>
+      <button class="modal-close" onclick="closeModal('modalCreateAcc')" title="Close">✕</button>
+    </div>
+    <div class="form-grid one-col">
+      <div class="form-group"><label class="fl" for="ca-name">Full name</label><input type="text" id="ca-name"/></div>
+      <div class="form-group"><label class="fl" for="ca-email">Email</label><input type="email" id="ca-email" placeholder="name@lxx.example"/></div>
+      <div class="form-group"><label class="fl" for="ca-pwd">Password</label><input type="password" id="ca-pwd"/></div>
+      <div class="form-group"><label class="fl" for="ca-role">Role</label><select id="ca-role"><option value="employee">Employee</option><option value="admin">Admin / HR</option></select></div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="closeModal('modalCreateAcc')">Cancel</button>
+      <button class="btn btn-primary" onclick="submitCreateAcc()">Create account</button>
+    </div>
+  </div>
+</div>
+
+<!-- toast -->
+<div class="toast-wrap" id="toastWrap"></div>
+
+<script src="app.js"></script>
+<script>
+  // step line, menu search and F-keys
+  function setStep(n) {
+    var t = document.getElementById("runSteps");
+    t.style.setProperty("--done", n);
+    t.querySelectorAll("i").forEach(function (dot, i) {
+      dot.classList.toggle("on", i <= n);
+    });
+  }
+  document.getElementById("calcEmp").addEventListener("change", function () {
+    setStep(this.value === "" ? 0 : 1);
+  });
+  var oldBuild = window.buildPayslip;
+  window.buildPayslip = function () {
+    oldBuild.apply(this, arguments);
+    setStep(2);
+  };
+
+  function filterMenu(q) {
+    q = q.trim().toLowerCase();
+    document.querySelectorAll(".sidebar .nav-item").forEach(function (el) {
+      el.classList.toggle("hide", q !== "" && !el.textContent.toLowerCase().includes(q));
+    });
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (document.getElementById("app").style.display !== "flex") return;
+    if (e.key === "F2") {
+      e.preventDefault();
+      openAddEmpModal();
+    } else if (e.key === "F3") {
+      e.preventDefault();
+      var onEmp = document.getElementById("page-employees").classList.contains("active");
+      document.getElementById(onEmp ? "empSearch" : "menuSearch").focus();
+    } else if (e.key === "F8") {
+      e.preventDefault();
+      exportPayrollCSV();
+    }
+  });
+</script>
+</body>
+</html>
