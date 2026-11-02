@@ -1,6 +1,6 @@
 # Payroll System
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open-2ea44f?logo=githubpages&logoColor=white)](https://cheah20.github.io/Payroll-System/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open-2ea44f?logo=githubpages&logoColor=white)](https://cheah20.github.io/PayrollSystem/)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
